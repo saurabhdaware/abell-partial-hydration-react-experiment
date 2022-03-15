@@ -1,5 +1,7 @@
 # Abell Partial Hydration with React
 
+Demo: https://stackblitz.com/github/saurabhdaware/abell-partial-hydration-react-experiment
+
 Read more about partial hydration here - https://docs.astro.build/en/core-concepts/component-hydration/
 
 In this example, we're hydrating the `Navbar` component as soon as possible.
