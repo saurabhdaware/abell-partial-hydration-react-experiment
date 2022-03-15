@@ -7,4 +7,4 @@ ReactDOM.hydrate(<Navbar />, document.querySelector('#navbar'));
 setTimeout(async () => {
   const Counter = (await import('./Counter')).default;
   ReactDOM.hydrate(<Counter />, document.querySelector('#counter'));
-}, 200);
+}, 5000);
