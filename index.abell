@@ -1,0 +1,26 @@
+{{
+  import React from 'react';
+  import ReactDOMServer from 'react-dom/server';
+  import Navbar from './client/Navbar.tsx';
+  import About from './client/About.tsx';
+  import Counter from './client/Counter.tsx';
+}}
+<html>
+<head>
+  <style>
+  p {
+    font-style: italic;
+    font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+  <p>navbar hydrates immediately</p>
+  <div id="navbar">{{ ReactDOMServer.renderToString(<Navbar />) }}</div>
+  <p>about does not need hydration</p>
+  <div id="about">{{ ReactDOMServer.renderToStaticMarkup(<About />) }}</div>
+  <p>counter hydrates after 5 seconds</p>
+  <div id="counter">{{ ReactDOMServer.renderToString(<Counter />) }}</div>
+  <script src="./client/entry-index.tsx" type="module"></script>
+</body>
+</html>

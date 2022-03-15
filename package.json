@@ -1,0 +1,21 @@
+{
+  "name": "abell-partial-hydration-react-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "abell dev",
+    "generate": "abell generate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^17.0.40",
+    "@types/react-dom": "^17.0.13",
+    "abell": "^1.0.0-alpha.47",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
