@@ -22,6 +22,12 @@ npm install
 npm run dev
 ```
 
+## Request Flow
+
+You can see the `Navbar` was bundled along-side the other code in `index.js` and it was loaded as soon as possible. Thus the Navbar was interactive even before the rest of the page (in this case, `Counter`) was loaded.
+
+![requests loading in sequence- index.js, vendors.js, Counter.js](2022-03-15-23-17-08.png)
+
 ---
 
 Built with [Abell](https://github.com/abelljs/abell)
